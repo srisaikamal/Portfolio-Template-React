@@ -1,0 +1,10 @@
+.logo {
+  position: absolute;
+  top: -8rem;
+  left: 5px;
+
+  @include respond(tab-port) {
+    left: -5px;
+    top: -15rem;
+  }
+}

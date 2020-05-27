@@ -1,0 +1,60 @@
+// @import "../Abstract/variables";
+
+.home {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  height: 100vh;
+  font-size: 2rem;
+  position: relative;
+  background-size: cover;
+  position: relative;
+
+  &__main-heading {
+    color: $color-grey-light-1;
+    @include absCenter;
+    left: 30%;
+    width: 50%;
+
+    @include respond(tab-port) {
+      left: 50%;
+      width: 90%;
+      text-align: left;
+    }
+  }
+
+  &__heading {
+    font-family: Mainfont-bold;
+    font-weight: 800;
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    @include respond(tab-port) {
+      font-size: 4.5rem;
+      width: 100%;
+      margin-top: 4rem;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__para {
+    font-weight: 300;
+    width: 93%;
+    line-height: 1.7;
+  }
+
+  &__img {
+    width: 40%;
+    height: auto;
+    @include absCenter;
+    left: 73%;
+
+    @include respond(tab-port) {
+      visibility: hidden;
+    }
+  }
+}

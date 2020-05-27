@@ -1,0 +1,56 @@
+.About__bg {
+  padding: 10rem;
+  position: relative;
+}
+
+.heading-primary {
+  position: absolute;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  justify-content: center;
+  @include absCenter;
+  top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  text-align: center;
+  margin-left: 5rem;
+  width: 27rem;
+  height: 37rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  color: white;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px -2px 13px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -2px 13px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -2px 13px -6px rgba(0, 0, 0, 0.75);
+
+  @include respond(tab-port) {
+    margin-left: -6rem;
+  }
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__para {
+    margin-top: 5rem;
+    line-height: 2;
+    font-size: 1.7rem;
+  }
+}
