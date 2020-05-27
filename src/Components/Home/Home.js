@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 import Button from "../../Resuable-comps/button";
 class Home extends React.Component {
+  componentDidMount() {
+    document.title = "Sri Sai Kamal Portfolio";
+  }
   render() {
     return (
       <section className="home">
